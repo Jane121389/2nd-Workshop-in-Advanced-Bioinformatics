@@ -2,14 +2,6 @@ import networkx as nx
 import EoN
 import matplotlib.pyplot as plt
 
-graph = nx.grid_2d_graph(5,5) #creamos una malla de nodos
-nx.draw(graph)
-plt.show() #si queremos visualizar el grafos
-#print('nodos')
-#print(graph.nodes)
-#print('aristas')
-#print(graph.edges)
-
 G = nx.grid_2d_graph(100,100) #creamos una malla de nodos
 #colocamos infecciones iniciales 
 initial_infections = [(u,v) for (u,v) in G if 45<u<55 and 45<v<55]
